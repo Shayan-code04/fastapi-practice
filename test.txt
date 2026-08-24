@@ -1,0 +1,25 @@
+cheat sheet for Linux commands
+
+# FILES / PERMISSIONS
+touch test.sh
+ls -l test.sh
+chmod 000 test.sh
+chmod 644 test.sh
+chmod 755 test.sh
+cat test.sh
+
+# PROCESSES
+ps aux
+ps aux | grep uvicorn
+kill <PID>
+
+# BACKGROUND
+uvicorn main:app --reload &
+
+# NETWORKING
+curl http://localhost:8000/
+netstat -ano | grep 8000
+
+# ENVIRONMENT VARIABLES
+export MY_VAR="hello"
+echo $MY_VAR
